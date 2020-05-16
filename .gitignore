@@ -15,6 +15,7 @@
 # vendor/
 
 alfred-sheet-counter
+alfred-sheet-counter.alfredworkflow
 
 # credentials
 credentials.json
