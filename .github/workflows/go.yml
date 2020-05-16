@@ -47,7 +47,7 @@ jobs:
   release:
     name: Release
     needs: build
-    if: ${{ startsWith(github.ref, 'v') }}
+    if: "startsWith(github.ref, 'refs/tags/v')"
     strategy:
       matrix:
         os: [ubuntu-latest]
