@@ -4,7 +4,7 @@ on:
     branches:
       - master
     tags:
-      - v*
+      - 'v*'
     paths-ignore:
       - "**/README.md"
   pull_request:
@@ -47,7 +47,7 @@ jobs:
   release:
     name: Release
     needs: build
-    if: ${{ github.ref == v* }}
+    if: ${{ startsWith(github.ref, 'v') }}
     strategy:
       matrix:
         os: [ubuntu-latest]
