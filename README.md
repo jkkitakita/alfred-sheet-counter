@@ -2,7 +2,7 @@
 
 ## Required
 
-- Go >= 1.4
+- Go >= 1.14
 
 ## Usage
 
